@@ -124,37 +124,3 @@ urls = [
 
 for url in urls: 
     print(extract(url))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
