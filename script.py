@@ -15,10 +15,6 @@ def extract(url):
         print("URL got error: " + str(response.status_code))
         return None
 
-
-    # file = open("../scrapping/imdb.data","r")
-    # body = file.read()
-
     # Create valiables
     body = response.text
 
@@ -66,10 +62,6 @@ def extract(url):
     # ________________Rate________________ => float
     rate = html.find(attrs={"data-testid": "hero-rating-bar__aggregate-rating__score"})
     rate = float(rate.text.split("/")[0])
-
-    # ________________Popularity________________ => up,down
-    popu = html.find_all(attrs={"class": "ipc-icon"})
-
 
 
     #===============================================================================================================================================================================
